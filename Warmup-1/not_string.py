@@ -7,3 +7,15 @@ not_string('candy') → 'not candy'
 not_string('x') → 'not x'
 not_string('not bad') → 'not bad'
 '''
+
+def not_string(mstr):
+    mehNot = 'not'
+    if len(mstr) >= 3 and mstr[:3] == mehNot:
+        return mstr
+    return mehNot + " " + mstr
+
+
+print(not_string("candy"))
+print(not_string("x"))
+print(not_string("not bad"))
+print(not_string("no"))
